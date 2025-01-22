@@ -1,6 +1,6 @@
 body {
     --base-size: 12px;
-    --gutter: calc( 3 * var (--base-size));
+    --gutter-size: calc(3 * var(--base-size));
 
     --color--primary: black;
     --color--secondary: gold;

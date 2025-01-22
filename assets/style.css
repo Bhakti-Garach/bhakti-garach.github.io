@@ -6,3 +6,11 @@ body {
     --color--secondary: gold;
     --color--background: white;
 }
+
+header {
+    background-color: var(--color--background);
+}
+
+.gutters {
+    padding: var(--gutter-size);
+}

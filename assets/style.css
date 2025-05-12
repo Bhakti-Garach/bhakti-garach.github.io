@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
+    --spacing: 1rem;
     --base-size: 12px;
-    --gutter-size: calc(3 * var(--base-size));
+    --gutter-size: calc(2 * var(--spacing));
 
     --color--primary: black;
-    --color--secondary: gold;
+    --color--secondary: white;
     --color--background: tomato;
 
-    font-size: var(--base-size);
+    font-size: var(--spacing);
+    --font-family: 'Roboto Mono';
 }
 
 @media (min-width: 600px) {
@@ -16,23 +20,44 @@
     }
 }
 
-header {
-    background-color: var(--color--background);
-    padding-block: calc(5 * var(--base-size));
+body {
+    background-color: var(--color--primary);
+    height: 100svh;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    padding-top: var(--spacing);
+    font-family: var(--font-family);
 }
 
-#main-content{
+header {
+    display: flex;
+	justify-content: space-between;
+	align-items: top;
+    padding-bottom: var(--gutter-size);
+}
+
+h1 {
+	font-size: 1em;
+	color: white;
+}
+
+a {
+	border-bottom: 1px dashed var(--color--secondary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em 0 1.5em 0;
+
+	font-size: 1em;
+	color: var(--color--secondary);
+}
+
+a:hover {
+	color: #c3ff00;
+}
+
+/* #main-content{
     block-size: 75vh;
     padding-top: var(--base-size);
     padding-bottom: calc(5 * var(--base-size));
-}
-
-footer {
-    background-color: var(--color--secondary);
-    padding-top: var(--base-size);
-    padding-bottom: calc(5 * var(--base-size));
-}
-
-.gutters {
-    padding: var(--gutter-size);
-}
+} */

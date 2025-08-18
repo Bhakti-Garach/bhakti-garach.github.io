@@ -1,49 +1,246 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Typography & Interaction</title>
-        <link href="assets/reset.css" rel="stylesheet">
-        <link href="assets/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="gutters">
-            <h1>Bhakti Garach</h1>
-            <h1>Typography & Interaction</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhakti Garach | Typography & Interaction</title>
+  <link href="assets/reset.css" rel="stylesheet">
+  <link href="assets/style1.css" rel="stylesheet">
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+    <div id="grid-background"></div>
+    <div class="layout-grid">
+        <header>
+            <a href="https://bhaktigarach.com/" target="_blank" class="header-link">
+            <img src="assets/Portfolio.svg" alt="Portfolio Icon" width="24" height="24">
+            <span>Portfolio</span>
+            </a>
+        
+            <div class="header-link" data-modal="aboutModal">
+            <img src="assets/About.svg" alt="About Icon" width="24" height="24">
+            <span>.about</span>
+            </div>
+        
+            <div class="header-link" data-modal="professorModal">
+            <img src="assets/Professor.svg" alt="Professor Icon" width="24" height="24">
+            <span>Professors</span>
+            </div>
+        
+            <a href="https://github.com/Bhakti-Garach?tab=repositories" target="_blank" class="header-link">
+            <img src="assets/Github.svg" alt="GitHub Icon" width="24" height="24">
+            <span>GitHub</span>
+            </a>
+        
+            <a href="mailto:bhaktigarach93@email.com" class="header-link">
+            <img src="assets/Email.svg" alt="Email Icon" width="24" height="24">
+            <span>Email</span>
+            </a>
+        
+            <div class="header-link" data-modal="colophonModal">
+            <img src="assets/Colophon.svg" alt="Colophon Icon" width="24" height="24">
+            <span>Colophon</span>
+            </div>
+        
+            <a href="https://drive.google.com/your-resume.pdf" target="_blank" class="header-link">
+            <img src="assets/Resume.svg" alt="Resume Icon" width="24" height="24">
+            <span>Resume.pdf</span>
+            </a>
+            
+            <div class="header-link" data-modal="notesModal">
+            <img src="assets/Notes.svg" alt="Notes Icon" width="24" height="24">
+            <span>Notes</span>
+            </div>
         </header>
+
+        <!-- Modals -->
+        <!-- ABOUT MODAL -->
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">ABOUT</span>
+                <span class="modal-close">×</span>
+            </div>
+            <div class="about-content">
+                <p>
+                Typography & Interaction, part of my MPS Communication Design program at Parsons, was designed to bridge visual design with technical execution. The class framework pushed us to think beyond layouts and type treatments, and to bring our ideas to life directly in the browser.
+                </p>
+            </div>
+            </div>
+        </div>
+  
+
+        <!-- PROFESSOR MODAL -->
+        <div id="professorModal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">PROFESSORS</span>
+                <span class="modal-close">×</span>
+            </div>
+            <div class="professor-grid">
+                <div class="professor-card">
+                <img src="assets/Michael Fehrenbach.jpg" alt="Michael Fehrenbach" />
+                <a href="https://www.linkedin.com/in/mfehrenbach/" target="_blank">Michael Fehrenbach</a>
+                </div>
+                <div class="professor-card">
+                <img src="assets/Rijk van Zanten.jpg" alt="Rijk van Zanten" />
+                <a href="https://www.linkedin.com/in/rijkvanzanten/" target="_blank">Rijk van Zanten</a>
+                </div>
+                <div class="professor-card">
+                <img src="assets/Eric Li.jpg" alt="Eric Li" />
+                <a href="https://www.linkedin.com/in/ericyoungli/" target="_blank">Eric Li</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- COLOPHON -->
+        <div id="colophonModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title">COLOPHON</span>
+                    <span class="modal-close">×</span>
+                </div>
+              <div class="colophon-modal">
+                <div class="colophon-font">
+                  <div class="font-preview">
+                    <span class="font-sample">Aa</span>
+                    <span class="font-name">IBM Plex Sans</span>
+                  </div>
+                  <div class="font-description">
+                    <h2>Clean, modern aesthetic and high legibility</h2>
+                    <p>
+                      IBM Plex Sans balances geometric structure with humanist warmth. It complements the digital nature of this project while maintaining clarity across sizes and layouts. Its versatility made it an ideal choice for both interface elements and longer text.
+                    </p>
+                  </div>
+                </div>
+          
+                <hr class="colophon-divider" />
+          
+                <div class="colophon-colors">
+                  <div class="color-swatch" style="--swatch-color: #4DA2FF;"><span>#4DA2FF</span></div>
+                  <div class="color-swatch" style="--swatch-color: #03BFFF;"><span>#03BFFF</span></div>
+                  <div class="color-swatch" style="--swatch-color: #BFA1FF;"><span>#BFA1FF</span></div>
+                  <div class="color-swatch" style="--swatch-color: #FF3F9F;"><span>#FF3F9F</span></div>
+                  <div class="color-swatch" style="--swatch-color: #54D99A;"><span>#54D99A</span></div>
+                  <div class="color-swatch" style="--swatch-color: #FFE048;"><span>#FFE048</span></div>
+                  <div class="color-swatch" style="--swatch-color: #000000;"><span>#000000</span></div>
+                  <div class="color-swatch" style="--swatch-color: #D9D9D9;"><span>#D9D9D9</span></div>
+                  <div class="color-swatch" style="--swatch-color: #FFFFFF;"><span>#FFFFFF</span></div>
+                  <div class="color-swatch" style="--swatch-color: #F2EEE4;"><span>#F2EEE4</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- <div id="notesModal" class="modal"><div class="modal-content"><span class="modal-close">×</span><p>Notes content here</p></div></div> -->
+
+
         <main>
-            <ul>
-                <li>
-                    <a href="https://bhakti-garach.github.io/manuscript/">
-                        Manuscript
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://iirischang.github.io/spread/">
-                        Spread
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://bhakti-garach.github.io/binding/">
-                        Binding
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://bhakti-garach.github.io/links/">
-                        Links
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://bhakti-garach.github.io/functions/">
-                        Functions
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </a>
-                </li>
-            </ul>
+            <article class="site-intro">
+                <section>
+                    <h1 class="site-headline">Typography & Interaction</h1>
+                    <p class="site-subheadline">
+                    A two-semester course in the MPS Communication Design program at Parsons School of Design – The New School.
+                    </p>
+                </section>
+            </article>
+            <article id="table">
+                <section class="project-filter" aria-label="Filter projects by semester">
+                    <button class="filter-button" data-filter="Fall">1: Fall Semester</button>
+                    <button class="filter-button" data-filter="Spring">2: Spring Semester</button>
+                    <button class="filter-button active" data-filter="All">All</button>
+                </section>              
+                <section class="project-list">
+                    <ul>
+                
+                    <!-- Header Row (visible only in desktop) -->
+                    <li class="project-header-row">
+                        <span>Semester</span>
+                        <span>Project</span>
+                        <span>Skills</span>
+                        <span></span>
+                    </li>
+                
+                    <!-- Project Card -->
+                    <li class="project-row" data-semester="fall">
+                        <section class="project-info">
+                        <div class="project-semester">Fall</div>
+                        <div class="project-title">Manuscript</div>
+                        <div class="project-skills">HTML, CSS</div>
+                        </section>
+                        <section class="project-link">
+                            <a href="https://your-project-link.com" target="_blank" class="project-button" aria-label="View project">
+                                <img src="assets/project link.svg" alt="" width="24" height="24" />
+                            </a>
+                        </section>
+                    </li>
+
+                    <li class="project-row" data-semester="fall">
+                        <section class="project-info">
+                        <div class="project-semester">Fall</div>
+                        <div class="project-title">Spread</div>
+                        <div class="project-skills">HTML, CSS, Responsive Design</div>
+                        </section>
+                        <section class="project-link">
+                            <a href="https://your-project-link.com" target="_blank" class="project-button" aria-label="View project">
+                                <img src="assets/project link.svg" alt="" width="24" height="24" />
+                            </a>
+                        </section>
+                    </li>
+
+                    <li class="project-row" data-semester="fall">
+                        <section class="project-info">
+                        <div class="project-semester">Fall</div>
+                        <div class="project-title">Binding</div>
+                        <div class="project-skills">HTML, CSS, Multiple Web Pages</div>
+                        </section>
+                        <section class="project-link">
+                            <a href="https://your-project-link.com" target="_blank" class="project-button" aria-label="View project">
+                                <img src="assets/project link.svg" alt="" width="24" height="24" />
+                            </a>
+                        </section>
+                    </li>
+
+                    <li class="project-row" data-semester="fall">
+                        <section class="project-info">
+                        <div class="project-semester">Spring</div>
+                        <div class="project-title">Links</div>
+                        <div class="project-skills">HTML, CSS, Javascript, API Integration</div>
+                        </section>
+                        <section class="project-link">
+                            <a href="https://your-project-link.com" target="_blank" class="project-button" aria-label="View project">
+                                <img src="assets/project link.svg" alt="" width="24" height="24" />
+                            </a>
+                        </section>
+                    </li>
+
+                    <li class="project-row" data-semester="fall">
+                        <section class="project-info">
+                        <div class="project-semester">Spring</div>
+                        <div class="project-title">Functions</div>
+                        <div class="project-skills">HTML, CSS, Javascript</div>
+                        </section>
+                        <section class="project-link">
+                            <a href="https://your-project-link.com" target="_blank" class="project-button" aria-label="View project">
+                                <img src="assets/project link.svg" alt="" width="24" height="24" />
+                            </a>
+                        </section>
+                    </li>
+                    </ul>
+                </section> 
+            </article>
         </main>
-    </body>
+
+        
+        <!-- <section id="events" data-theme-section="light" class="section u--theme-white"> -->
+
+        <!-- </section> -->
+    </div>
+    
+    <footer>
+        <p>Bhakti Garach © 2025</p>
+    </footer>
+</body>
 </html>
